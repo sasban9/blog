@@ -7,48 +7,247 @@
     <title>sasban9 BLOG</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .pic-wrapper {
+            position: relative;
+            width: 50%;
+            min-width: 500px;
+            height: 50vh;
+            margin:0 auto;
+            overflow: hidden;
+        }
+
+        figure {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            /*animation*/
+
+            animation: slideShow 24s linear infinite 0s;
+            -o-animation: slideShow 24s linear infinite 0s;
+            -moz-animation: slideShow 24s linear infinite 0s;
+            -webkit-animation: slideShow 24s linear infinite 0s;
+        }
+
+        figurecaption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #fff;
+        }
+
+        .pic-1 {
+            opacity: 1;
+            background: url(https://morguefile.nyc3.cdn.digitaloceanspaces.com/imageData/public/files/g/GaborfromHungary/06/p/74fea178af5c36b5303625ffeacd8454.jpg) no-repeat center center;
+            /* https://morguefile.nyc3.cdn.digitaloceanspaces.com/pub/secretagency/images/8/large/7c2c6b47-6523-48ae-9709-c5822592c30b.1691172381.jpg */
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .pic-2 {
+            animation-delay: 6s;
+            -o-animation-delay: 6s;
+            -moz--animation-delay: 6s;
+            -webkit-animation-delay: 6s;
+            background: url(https://morguefile.nyc3.cdn.digitaloceanspaces.com/imageData/public/files/k/Koan/06/p/ea989990a29bb73aa78db9f8322b5631.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .pic-3 {
+            animation-delay: 12s;
+            -o-animation-delay: 12s;
+            -moz--animation-delay: 12s;
+            -webkit-animation-delay: 12s;
+            background: url(https://morguefile.nyc3.cdn.digitaloceanspaces.com/imageData/public/files/t/TSmythe/06/p/74820906fce25071550b74b6773a0e19.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .pic-4 {
+            animation-delay: 18s;
+            -o-animation-delay: 18s;
+            -moz--animation-delay: 18s;
+            -webkit-animation-delay: 18s;
+            background: url(https://morguefile.nyc3.cdn.digitaloceanspaces.com/imageData/public/files/i/Isbiliani/05/p/8787b7ac34a8de4c4aad6fe8a5d7e925.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        /* keyframes*/
+
+        @keyframes slideShow {
+            0% {
+                opacity: 0;
+                transform: scale(1);
+                -ms-transform: scale(1);
+            }
+
+            5% {
+                opacity: 1
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+                transform: scale(1.1);
+                -ms-transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1);
+                -ms-transformm: scale(1);
+            }
+        }
+
+        @-o-keyframes slideShow {
+            0% {
+                opacity: 0;
+                -o-transform: scale(1);
+            }
+
+            5% {
+                opacity: 1
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+                -o-transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 0;
+                -o-transformm: scale(1);
+            }
+        }
+
+        @-moz-keyframes slideShow {
+            0% {
+                opacity: 0;
+                -moz-transform: scale(1);
+            }
+
+            5% {
+                opacity: 1
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+                -moz-transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 0;
+                -moz-transformm: scale(1);
+            }
+        }
+
+        @-webkit-keyframes slideShow {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(1);
+            }
+
+            5% {
+                opacity: 1
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+                -webkit-transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transformm: scale(1);
+            }
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="pic-wrapper">
+        <figure class="pic-1"></figure>
+        <figure class="pic-2"></figure>
+        <figure class="pic-3"></figure>
+        <figure class="pic-4"></figure>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
-<table class="table">
-    <tr>
-        <td colspan="12"><h4>2022</h4></td>
-    </tr>
-    <tr>
-        <td><a href="/blog/2023/01">JAN</a></td>
-        <td><a href="/blog/2023/02">FEB</a></td>
-        <td><a href="/blog/2023/03">MAR</a></td>
-        <td><a href="/blog/2023/04">APR</a></td>
-        <td><a href="/blog/2023/05">MAY</a></td>
-        <td><a href="/blog/2023/06">JUN</a></td>
-        <td><a href="/blog/2023/07">JUL</a></td>
-        <td><a href="/blog/2023/08">AUG</a></td>
-        <td><a href="/blog/2023/09">SEP</a></td>
-        <td><a href="/blog/2023/10">OCT</a></td>
-        <td><a href="/blog/2023/11">NOV</a></td>
-        <td><a href="/blog/2023/12">DEC</a></td>
-    </tr>
-    <tr>
-        <td colspan="12"><h4>2023</h4></td>
-    </tr>
-    <tr>
-        <td><a href="/blog/2023/01">JAN</a></td>
-        <td><a href="/blog/2023/02">FEB</a></td>
-        <td><a href="/blog/2023/03">MAR</a></td>
-        <td><a href="/blog/2023/04">APR</a></td>
-        <td><a href="/blog/2023/05">MAY</a></td>
-        <td><a href="/blog/2023/06">JUN</a></td>
-        <td><a href="/blog/2023/07">JUL</a></td>
-        <td><a href="/blog/2023/08">AUG</a></td>
-        <td><a href="/blog/2023/09">SEP</a></td>
-        <td><a href="/blog/2023/10">OCT</a></td>
-        <td><a href="/blog/2023/11">NOV</a></td>
-        <td><a href="/blog/2023/12">DEC</a></td>
-    </tr>
-</table>
+                <table class="table">
+                    <tr>
+                        <td colspan="12">
+                            <h4>2022</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/blog/2023/01">JAN</a></td>
+                        <td><a href="/blog/2023/02">FEB</a></td>
+                        <td><a href="/blog/2023/03">MAR</a></td>
+                        <td><a href="/blog/2023/04">APR</a></td>
+                        <td><a href="/blog/2023/05">MAY</a></td>
+                        <td><a href="/blog/2023/06">JUN</a></td>
+                        <td><a href="/blog/2023/07">JUL</a></td>
+                        <td><a href="/blog/2023/08">AUG</a></td>
+                        <td><a href="/blog/2023/09">SEP</a></td>
+                        <td><a href="/blog/2023/10">OCT</a></td>
+                        <td><a href="/blog/2023/11">NOV</a></td>
+                        <td><a href="/blog/2023/12">DEC</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="12">
+                            <h4>2023</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/blog/2023/01">JAN</a></td>
+                        <td><a href="/blog/2023/02">FEB</a></td>
+                        <td><a href="/blog/2023/03">MAR</a></td>
+                        <td><a href="/blog/2023/04">APR</a></td>
+                        <td><a href="/blog/2023/05">MAY</a></td>
+                        <td><a href="/blog/2023/06">JUN</a></td>
+                        <td><a href="/blog/2023/07">JUL</a></td>
+                        <td><a href="/blog/2023/08">AUG</a></td>
+                        <td><a href="/blog/2023/09">SEP</a></td>
+                        <td><a href="/blog/2023/10">OCT</a></td>
+                        <td><a href="/blog/2023/11">NOV</a></td>
+                        <td><a href="/blog/2023/12">DEC</a></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
